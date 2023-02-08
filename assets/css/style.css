@@ -61,6 +61,21 @@ a {
     margin: 0 auto;
 }
 
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
+
+.break-all {
+    word-break: break-all;
+}
+
 /* ========= Header ========== */
 .header {
     background: #fffcf4;
@@ -339,6 +354,10 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.popular .course-item .title a {
+    padding-right: 6px;
 }
 
 .popular .course-item .title a,
